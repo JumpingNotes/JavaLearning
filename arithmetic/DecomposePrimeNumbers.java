@@ -35,4 +35,5 @@ public class DecomposePrimeNumbers {
         result.append(num);
         return result.toString();
     }
+
 }
