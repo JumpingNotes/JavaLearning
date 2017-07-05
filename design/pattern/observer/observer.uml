@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>design.pattern.observer</OriginalElement>
+  <nodes>
+    <node x="-357.0" y="189.0">design.pattern.observer.Main</node>
+    <node x="13.5" y="0.0">design.pattern.observer.Observable</node>
+    <node x="353.0" y="0.0">design.pattern.observer.Observer</node>
+    <node x="310.0" y="241.0">design.pattern.observer.IObserver</node>
+    <node x="0.0" y="349.0">design.pattern.observer.IObservable</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="design.pattern.observer.IObservable" target="design.pattern.observer.Observable">
+      <point x="0.0" y="-41.0" />
+      <point x="0.0" y="149.5" />
+    </edge>
+    <edge source="design.pattern.observer.IObserver" target="design.pattern.observer.Observer">
+      <point x="0.0" y="-41.0" />
+      <point x="0.0" y="95.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="161.5" y="285.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

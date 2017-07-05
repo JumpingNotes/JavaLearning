@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>design.pattern.abstractfactory</OriginalElement>
+  <nodes>
+    <node x="267.0" y="391.0">design.pattern.abstractfactory.ProductB</node>
+    <node x="0.0" y="391.0">design.pattern.abstractfactory.ProductA</node>
+    <node x="157.0" y="538.0">design.pattern.abstractfactory.Main</node>
+    <node x="136.0" y="0.0">design.pattern.abstractfactory.AbstractFactory</node>
+    <node x="133.5" y="259.0">design.pattern.abstractfactory.AbstractProduct</node>
+    <node x="333.0" y="132.0">design.pattern.abstractfactory.FactoryA</node>
+    <node x="0.0" y="132.0">design.pattern.abstractfactory.FactoryB</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="design.pattern.abstractfactory.ProductB" target="design.pattern.abstractfactory.AbstractProduct">
+      <point x="0.0" y="-41.0" />
+      <point x="390.5" y="366.0" />
+      <point x="318.75" y="366.0" />
+      <point x="61.75" y="41.0" />
+    </edge>
+    <edge source="design.pattern.abstractfactory.FactoryB" target="design.pattern.abstractfactory.AbstractFactory">
+      <point x="0.0" y="-41.0" />
+      <point x="156.5" y="107.0" />
+      <point x="229.75" y="107.0" />
+      <point x="-93.75" y="41.0" />
+    </edge>
+    <edge source="design.pattern.abstractfactory.ProductA" target="design.pattern.abstractfactory.AbstractProduct">
+      <point x="0.0" y="-41.0" />
+      <point x="123.5" y="366.0" />
+      <point x="195.25" y="366.0" />
+      <point x="-61.75" y="41.0" />
+    </edge>
+    <edge source="design.pattern.abstractfactory.FactoryA" target="design.pattern.abstractfactory.AbstractFactory">
+      <point x="0.0" y="-41.0" />
+      <point x="490.5" y="107.0" />
+      <point x="417.25" y="107.0" />
+      <point x="93.75" y="41.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="165.5" y="330.0" />
+  <SelectedNodes>
+    <node>design.pattern.abstractfactory.Main</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
