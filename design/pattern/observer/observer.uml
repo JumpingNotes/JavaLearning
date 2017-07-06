@@ -3,11 +3,11 @@
   <ID>JAVA</ID>
   <OriginalElement>design.pattern.observer</OriginalElement>
   <nodes>
-    <node x="-357.0" y="189.0">design.pattern.observer.Main</node>
-    <node x="13.5" y="0.0">design.pattern.observer.Observable</node>
-    <node x="353.0" y="0.0">design.pattern.observer.Observer</node>
-    <node x="310.0" y="241.0">design.pattern.observer.IObserver</node>
-    <node x="0.0" y="349.0">design.pattern.observer.IObservable</node>
+    <node x="139.5" y="715.0">design.pattern.observer.Main</node>
+    <node x="13.5" y="258.0">design.pattern.observer.Observable</node>
+    <node x="177.0" y="20.0">design.pattern.observer.Observer</node>
+    <node x="268.5" y="375.5">design.pattern.observer.IObserver</node>
+    <node x="0.0" y="590.0">design.pattern.observer.IObservable</node>
   </nodes>
   <notes />
   <edges>
@@ -17,15 +17,35 @@
     </edge>
     <edge source="design.pattern.observer.IObserver" target="design.pattern.observer.Observer">
       <point x="0.0" y="-41.0" />
-      <point x="0.0" y="95.5" />
+      <point x="400.5" y="267.0" />
+      <point x="310.5" y="267.0" />
+      <point x="44.5" y="95.5" />
+    </edge>
+    <edge source="design.pattern.observer.Observable" target="design.pattern.observer.Observer">
+      <point x="0.0" y="-149.5" />
+      <point x="132.5" y="225.0" />
+      <point x="223.5" y="226.0" />
+      <point x="-44.5" y="95.5" />
+    </edge>
+    <edge source="design.pattern.observer.Main" target="design.pattern.observer.IObservable">
+      <point x="-64.25" y="-41.0" />
+      <point x="203.75" y="697.0" />
+      <point x="132.5" y="697.0" />
+      <point x="0.0" y="41.0" />
+    </edge>
+    <edge source="design.pattern.observer.Main" target="design.pattern.observer.IObserver">
+      <point x="64.25" y="-41.0" />
+      <point x="332.25" y="697.0" />
+      <point x="403.5" y="697.0" />
+      <point x="0.0" y="41.0" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="161.5" y="285.0" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="162.5" y="425.0" />
   <SelectedNodes />
   <Categories>
-    <Category>Methods</Category>
-    <Category>Inner Classes</Category>
     <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>

@@ -1,4 +1,4 @@
-package design.pattern.abstractfactory;
+package design.pattern.factorymethod;
 
 /**
  * @author 鱼唇的人类
@@ -7,8 +7,8 @@ package design.pattern.abstractfactory;
  */
 public class Main {
     public static void main(String []args){
-        AbstractFactory factory=new FactoryA();
-        AbstractProduct product=factory.createProduct();
+        Factory factory=new FactoryA();
+        Product product=factory.createProduct();
         product.useProduct();
 
         factory=new FactoryB();

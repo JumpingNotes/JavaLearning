@@ -1,10 +1,10 @@
-package design.pattern.abstractfactory;
+package design.pattern.factorymethod;
 
 /**
  * @author 鱼唇的人类
  * @date 2017/7/5
  * @time 11:11
  */
-public interface AbstractProduct {
+public interface Product {
     void useProduct();
 }

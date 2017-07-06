@@ -14,8 +14,10 @@ public class RegularExpression {
         String str="abccdabdc";
         str="1+2*sqrt(9.83)";
         String regex="([0-9]+\\.[0-9]+)|[0-9]+|sqrt|\\+|\\*|\\/|\\-|\\(|\\)";
+        print(str,regex);
         str="233er444lee@qq.com23312";
         regex="[a-z]+@([a-z]+\\.)+(com|cn|edu)";
+        print(str,regex);
         regex="[$_A-Za-z][$_A-Za-z0-9]*";
         str="_$As_ss";
         print(str,regex);

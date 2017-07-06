@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>design.pattern.abstractfactory</OriginalElement>
+  <nodes>
+    <node x="76.5" y="264.0">design.pattern.factorymethod.FactoryB</node>
+    <node x="267.0" y="132.0">design.pattern.factorymethod.Factory</node>
+    <node x="294.5" y="0.0">design.pattern.factorymethod.Product</node>
+    <node x="289.25" y="396.0">design.pattern.factorymethod.Main</node>
+    <node x="445.5" y="264.0">design.pattern.factorymethod.FactoryA</node>
+    <node x="0.0" y="132.0">design.pattern.factorymethod.ProductB</node>
+    <node x="589.0" y="132.0">design.pattern.factorymethod.ProductA</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="design.pattern.factorymethod.Main" target="design.pattern.factorymethod.FactoryA">
+      <point x="64.25" y="-41.0" />
+      <point x="482.0" y="371.0" />
+      <point x="603.0" y="371.0" />
+      <point x="0.0" y="41.0" />
+    </edge>
+    <edge source="design.pattern.factorymethod.Main" target="design.pattern.factorymethod.FactoryB">
+      <point x="-64.25" y="-41.0" />
+      <point x="353.5" y="371.0" />
+      <point x="233.0" y="371.0" />
+      <point x="0.0" y="41.0" />
+    </edge>
+    <edge source="design.pattern.factorymethod.ProductB" target="design.pattern.factorymethod.Product">
+      <point x="0.0" y="-41.0" />
+      <point x="123.5" y="107.0" />
+      <point x="356.25" y="107.0" />
+      <point x="-61.75" y="41.0" />
+    </edge>
+    <edge source="design.pattern.factorymethod.ProductA" target="design.pattern.factorymethod.Product">
+      <point x="0.0" y="-41.0" />
+      <point x="712.5" y="107.0" />
+      <point x="479.75" y="107.0" />
+      <point x="61.75" y="41.0" />
+    </edge>
+    <edge source="design.pattern.factorymethod.FactoryA" target="design.pattern.factorymethod.ProductA">
+      <point x="78.75" y="-41.0" />
+      <point x="681.75" y="239.0" />
+      <point x="712.5" y="239.0" />
+      <point x="0.0" y="41.0" />
+    </edge>
+    <edge source="design.pattern.factorymethod.FactoryB" target="design.pattern.factorymethod.ProductB">
+      <point x="-78.25" y="-41.0" />
+      <point x="154.75" y="239.0" />
+      <point x="123.5" y="239.0" />
+      <point x="0.0" y="41.0" />
+    </edge>
+    <edge source="design.pattern.factorymethod.FactoryB" target="design.pattern.factorymethod.Factory">
+      <point x="78.25" y="-41.0" />
+      <point x="311.25" y="239.0" />
+      <point x="342.5" y="239.0" />
+      <point x="-75.5" y="41.0" />
+    </edge>
+    <edge source="design.pattern.factorymethod.FactoryA" target="design.pattern.factorymethod.Factory">
+      <point x="-78.75" y="-41.0" />
+      <point x="524.25" y="239.0" />
+      <point x="493.5" y="239.0" />
+      <point x="75.5" y="41.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="418.0" y="239.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

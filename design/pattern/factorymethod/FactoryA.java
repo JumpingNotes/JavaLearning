@@ -1,11 +1,11 @@
-package design.pattern.abstractfactory;
+package design.pattern.factorymethod;
 
 /**
  * @author 鱼唇的人类
  * @date 2017/7/5
  * @time 11:13
  */
-public class FactoryA implements AbstractFactory {
+public class FactoryA implements Factory {
 
     @Override
     public ProductA createProduct() {
