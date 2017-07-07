@@ -1,8 +1,5 @@
 package autoassembly.beanfactory;
 
-import annotation.Factory;
-import annotation.anno.*;
-
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

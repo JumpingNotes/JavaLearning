@@ -1,6 +1,7 @@
 package autoassembly.beanfactory;
 
-import annotation.User;
+
+import autoassembly.User;
 
 /**
  * @author 鱼唇的人类
@@ -13,6 +14,13 @@ public class Test {
         User user=new User();
         user.setName("lee");
         user.setAge(21);
+        return user;
+    }
+    @Bean("test2")
+    public User test2(){
+        User user=new User();
+        user.setName("lewis");
+        user.setAge(23);
         return user;
     }
 }

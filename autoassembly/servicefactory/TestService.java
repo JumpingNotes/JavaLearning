@@ -1,6 +1,7 @@
 package autoassembly.servicefactory;
 
-import annotation.User;
+
+import autoassembly.User;
 
 /**
  * @author 鱼唇的人类
@@ -10,7 +11,10 @@ import annotation.User;
 public class TestService {
     @Auto("test")
     private User user;
+    @Auto("test2")
+    private User user2;
     public void print(){
         System.out.println(user.toString());
+        System.out.println(user2.toString());
     }
 }
