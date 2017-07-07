@@ -1,4 +1,4 @@
-package annotation;
+package autoassembly;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -42,18 +42,10 @@ public class PackageScanner {
      * @throws IOException
      */
     private List<String> doScan(String basePackage, List<String> nameList) throws IOException {
-        // replace dots with splashes
         String splashPath = dotToSplash(basePackage);
-
-        // get file path
         URL url = cl.getResource(splashPath);
         String filePath = getRootPath(url);
-
-        // Get classes in that package.
-        // If the web server unzips the jar file, then the classes will exist in the form of
-        // normal file in the directory.
-        // If the web server does not unzip the jar file, then classes will exist in jar file.
-        List<String> names = null; // contains the name of the class file. e.g., Apple.class will be stored as "Apple"
+        List<String> names = null;
         if (isJarFile(filePath)) {
             names = readFromJarFile(filePath, splashPath);
         } else {
