@@ -7,7 +7,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * 线程池的简单使用
+ * 线程池的简单使用A
  * @author 鱼唇的人类
  * @date 2017/5/20
  * @time 22:28
