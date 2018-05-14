@@ -15,9 +15,8 @@ import java.util.concurrent.Executors;
 public class ExecutorsMain {
     public static void main(String[] args) {
         ExecutorService threadPool = Executors.newCachedThreadPool();
-        threadPool= Executors.newFixedThreadPool(3);
+//        threadPool= Executors.newFixedThreadPool(3);
         int []timeSpans={1,2,4,7,9,3,6,8,12,5,23,15,17};
-        System.out.println("理论使用时间："+Arrays.stream(timeSpans).sum()+"ms");
         for (int i = 0; i < timeSpans.length; i++) {
             final int timeSpan= timeSpans[i];
             threadPool.execute(() -> {
@@ -29,5 +28,6 @@ public class ExecutorsMain {
                 System.out.println(Thread.currentThread().getName()+"-时间长度:"+timeSpan);
             });
         }
+        threadPool.shutdown();
     }
 }

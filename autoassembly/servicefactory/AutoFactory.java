@@ -13,28 +13,32 @@ import java.util.Map;
  * @date 2017/7/7
  * @time 14:48
  */
-public class AutoFactory {
+public class AutoFactory{
     private static Map<String,Object> objectMap=new HashMap<>();
     public static Object getService(Class<?> clazz){
-        Object object = new Object();
         try {
-            object = clazz.newInstance();
+            final Object object = clazz.newInstance();
             Field []fields=clazz.getDeclaredFields();
-            for (Field field:fields){
+            Arrays.stream(fields).forEach(field -> {
                 if (field.isAnnotationPresent(Auto.class)){
                     Auto auto=field.getDeclaredAnnotation(Auto.class);
                     String autoName=auto.value();
                     if ("".equals(autoName))
                         autoName=field.getName();
                     field.setAccessible(true);
-                    field.set(object, BeanFactory.getBean(autoName));
+                    try {
+                        field.set(object, BeanFactory.getBean(autoName));
+                    } catch (IllegalAccessException e) {
+                        e.printStackTrace();
+                    }
                 }
-            }
+            });
+            return object;
         } catch (InstantiationException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
-        return object;
+        return null;
     }
 }

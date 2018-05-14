@@ -1,7 +1,8 @@
 package arithmetic;
 
 /**
- * @author 鱼唇的人类
+ * @desc: 大乐透程序
+ * @author: 鱼唇的人类
  * @date 2017/7/4
  * @time 14:42
  */

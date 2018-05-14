@@ -15,20 +15,23 @@ public class ResizingArrayStack<T> implements Iterable<T> {
 
     public void resize(int max){
         T[] temp= (T[]) new Object[max];
-        for (int i=0;i<size;i++)
-            temp[i]=array[i];
+        System.arraycopy(array, 0, temp, 0, size);
         array=temp;
     }
 
     public void push(T t){
-        if (size==array.length)resize(size*2);
+        if (size==array.length) {
+            resize(size * 2);
+        }
         array[size++]=t;
     }
 
     public T pop(){
         T t=array[--size];
         array[size]=null;
-        if (size>0&&size==array.length/4)resize(size/2);
+        if (size>0&&size==array.length/4) {
+            resize(size / 2);
+        }
         return t;
     }
 

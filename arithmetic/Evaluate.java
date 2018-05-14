@@ -19,8 +19,8 @@ public class Evaluate {
         String expr="(1+((2+3)*(4*5)))";
         //先在运算符前后添加空格，然后按空格来拆分为数组
         List<String> exprList=Arrays.asList(expr.replaceAll("([/\\+\\-\\*\\(\\)])", " $1 ").trim().split("\\s+"));
-        Stack<String> ops=new Stack<>();
-        Stack<Double> val=new Stack<>();
+        Stack<String> ops=new Stack<>();//运算符栈
+        Stack<Double> val=new Stack<>();//数字栈
         exprList.stream().forEach((e)->{
             switch (e){
                 case "(":break;

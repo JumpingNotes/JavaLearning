@@ -1,5 +1,7 @@
 package autoassembly.beanfactory;
 
+import autoassembly.servicefactory.AutoFactory;
+
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -13,7 +15,7 @@ import java.util.Map;
  * @time 9:51
  */
 public class BeanFactory {
-    private static Map<String,Object> beanMap=null;
+    private static Map<String,Object> beanMap=new HashMap<>();
 
     public static Object getBean(String beanName){
         if (beanMap==null)
